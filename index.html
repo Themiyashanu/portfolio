@@ -1,229 +1,222 @@
-<!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Massively by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Machine Learning & AI Projects – Portfolio | Themiya Thawalpitiya</title>
+  <meta name="description" content="Machine Learning & AI portfolio for Themiya Thawalpitiya — Data Science undergraduate. Projects, models, AI media samples and contact.">
+  <style>
+    :root{--bg:#071027;--card:#0f1724;--accent:#3b82f6;--muted:#9aa7c7;--glass:rgba(255,255,255,0.03)}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;color:#e8eefc;background:linear-gradient(180deg,var(--bg),#030511);line-height:1.5}
+    .container{max-width:1100px;margin:28px auto;padding:20px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:52px;height:52px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+    nav a{color:var(--muted);text-decoration:none;padding:8px 10px;border-radius:8px}
+    nav a:hover{color:var(--accent);background:var(--glass)}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;margin-top:22px;align-items:center}
+    .hero-card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:16px;padding:28px;box-shadow:0 10px 30px rgba(11,14,33,0.6)}
+    h1{font-size:28px;margin-bottom:8px}
+    .tag{color:var(--accent);font-weight:600;margin-bottom:12px}
+    p.lead{color:var(--muted);margin-bottom:14px}
+    .cta{display:flex;gap:12px;margin-top:14px}
+    .btn{background:var(--accent);color:#fff;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600}
+    .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+    .profile-card{background:url('https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&s=173d1d0e1b39b20fd1a6b6f2d3e1b8f3');background-size:cover;border-radius:16px;height:100%;min-height:260px;display:flex;align-items:flex-end;padding:18px;color:white}
+    .skills{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+    .skill{background:rgba(255,255,255,0.03);padding:8px 10px;border-radius:999px;color:var(--muted);font-size:13px}
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+    /* Sections */
+    section{margin-top:28px}
+    .section-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}
+    .grid{display:grid;gap:16px}
+    .projects-grid{grid-template-columns:repeat(auto-fit,minmax(300px,1fr));}
+    .card{background:var(--card);padding:16px;border-radius:14px;box-shadow:0 8px 24px rgba(2,6,23,0.6)}
+    .card h3{margin-bottom:8px}
+    .meta{color:var(--muted);font-size:13px;margin-bottom:12px}
+    .screenshot{width:100%;border-radius:10px;height:200px;object-fit:cover;background:#081127}
+    .feature-list{list-style:none;margin-top:10px}
+    .feature-list li{padding:6px 0;color:var(--muted);font-size:14px}
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>This is<br />
-						Massively</h1>
-						<p>A free, fully responsive HTML5 + CSS3 site template designed by <a href="https://twitter.com/ajlkn">@ajlkn</a> for <a href="https://html5up.net">HTML5 UP</a><br />
-						and released for free under the <a href="https://html5up.net/license">Creative Commons license</a>.</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+    /* media grid */
+    .media-grid{grid-template-columns:repeat(4,1fr);gap:12px}
+    .media-grid img{width:100%;height:140px;object-fit:cover;border-radius:10px}
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">Massively</a>
-					</header>
+    /* videos */
+    .video-grid{grid-template-columns:repeat(auto-fit,minmax(180px,1fr));}
+    .video-thumb{height:120px;background:#061025;border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--muted)}
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">This is Massively</a></li>
-							<li><a href="generic.html">Generic Page</a></li>
-							<li><a href="elements.html">Elements Reference</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
+    /* contact */
+    .contact{display:flex;gap:18px;align-items:center}
+    .contact a{color:var(--accent);text-decoration:none}
 
-				<!-- Main -->
-					<div id="main">
+    footer{margin-top:36px;padding:18px;text-align:center;color:var(--muted)}
 
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<span class="date">April 25, 2017</span>
-									<h2><a href="#">And this is a<br />
-									massive headline</a></h2>
-									<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam<br />
-									facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor<br />
-									amet nullam sed etiam veroeros.</p>
-								</header>
-								<a href="#" class="image main"><img src="images/pic01.jpg" alt="" /></a>
-								<ul class="actions special">
-									<li><a href="#" class="button large">Full Story</a></li>
-								</ul>
-							</article>
+    /* responsive */
+    @media (max-width:900px){.hero{grid-template-columns:1fr;}.media-grid{grid-template-columns:repeat(2,1fr)} }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">TT</div>
+        <div>
+          <div style="font-weight:700">Themiya Thawalpitiya</div>
+          <div style="font-size:13px;color:var(--muted)">Data Science Undergraduate</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#media">AI Media</a>
+        <a href="#videos">Videos</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-										<span class="date">April 24, 2017</span>
-										<h2><a href="#">Sed magna<br />
-										ipsum faucibus</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">April 22, 2017</span>
-										<h2><a href="#">Primis eget<br />
-										imperdiet lorem</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">April 18, 2017</span>
-										<h2><a href="#">Ante mattis<br />
-										interdum dolor</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">April 14, 2017</span>
-										<h2><a href="#">Tempus sed<br />
-										nulla imperdiet</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">April 11, 2017</span>
-										<h2><a href="#">Odio magna<br />
-										sed consectetur</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">April 7, 2017</span>
-										<h2><a href="#">Augue lorem<br />
-										primis vestibulum</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-							</section>
+    <!-- Page 1 Cover -->
+    <section id="home" class="hero">
+      <div class="hero-card">
+        <div class="tag">Machine Learning & AI Projects – Portfolio</div>
+        <h1>Machine Learning & AI Projects — Portfolio</h1>
+        <p class="lead">Practical AI solutions for real-world problems. I build predictive models, forecasts, and AI-powered media tailored for businesses and creators.</p>
+        <div class="cta">
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn ghost" href="#contact">Hire Me</a>
+        </div>
 
-						<!-- Footer -->
-							<footer>
-								<div class="pagination">
-									<!--<a href="#" class="previous">Prev</a>-->
-									<a href="#" class="page active">1</a>
-									<a href="#" class="page">2</a>
-									<a href="#" class="page">3</a>
-									<span class="extra">&hellip;</span>
-									<a href="#" class="page">8</a>
-									<a href="#" class="page">9</a>
-									<a href="#" class="page">10</a>
-									<a href="#" class="next">Next</a>
-								</div>
-							</footer>
+        <div style="margin-top:18px">
+          <strong>Tagline:</strong> <span style="color:var(--muted)">"Practical AI Solutions for Real-World Problems"</span>
+        </div>
+      </div>
 
-					</div>
+      <div class="profile-card">
+        <div>
+          <div style="font-weight:700;font-size:18px">Themiya Thawalpitiya</div>
+          <div style="font-size:13px;color:rgba(255,255,255,0.9)">Data Science Undergraduate</div>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<section>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="3"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-						</section>
-						<section class="split contact">
-							<section class="alt">
-								<h3>Address</h3>
-								<p>1234 Somewhere Road #87257<br />
-								Nashville, TN 00000-0000</p>
-							</section>
-							<section>
-								<h3>Phone</h3>
-								<p><a href="#">(000) 000-0000</a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="#">info@untitled.tld</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
+          <div class="skills">
+            <div class="skill">Python</div>
+            <div class="skill">Pandas</div>
+            <div class="skill">Scikit-Learn</div>
+            <div class="skill">TensorFlow</div>
+            <div class="skill">Data Visualization</div>
+            <div class="skill">Power BI</div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
+    <!-- About Page -->
+    <section id="about">
+      <div class="section-header">
+        <h2>About Me</h2>
+      </div>
+      <div class="card">
+        <p>I’m a 3rd-year Data Science undergraduate specializing in Machine Learning, Forecasting, and AI Content Creation. My expertise covers building ML models, predictive analytics, and generating AI-powered media for businesses and individuals.</p>
+        <div style="margin-top:12px">
+          <strong>Skills</strong>
+          <div class="skills" style="margin-top:8px">
+            <div class="skill">Python (Pandas, Scikit-Learn, TensorFlow)</div>
+            <div class="skill">Data Analysis & Forecasting</div>
+            <div class="skill">AI Image & Video Generation</div>
+            <div class="skill">Visualization (Matplotlib, Seaborn, Power BI)</div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-			</div>
+    <!-- Projects Section -->
+    <section id="projects">
+      <div class="section-header">
+        <h2>Projects</h2>
+      </div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+      <div class="grid projects-grid">
+        <!-- Project 1 -->
+        <div class="card">
+          <h3>Classification Model — Student Performance</h3>
+          <div class="meta">Tools: Python, Pandas, Scikit-Learn</div>
+          <img class="screenshot" src="https://via.placeholder.com/800x450.png?text=Confusion+Matrix+or+Accuracy+Graph" alt="Project 1">
+          <p style="margin-top:10px">Developed a classification model using Python to predict student performance categories. Achieved high accuracy with optimized preprocessing and feature selection.</p>
+        </div>
 
-	</body>
+        <!-- Project 2 -->
+        <div class="card">
+          <h3>Forecasting Model — Time Series</h3>
+          <div class="meta">Tools: Python, Statsmodels, Prophet</div>
+          <img class="screenshot" src="https://via.placeholder.com/800x450.png?text=Forecast+Chart" alt="Project 2">
+          <p style="margin-top:10px">Built a time series forecasting model for predicting future demand. Delivered visual forecasts and error metrics (RMSE, MAPE).</p>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="card">
+          <h3>Regression Model — Pricing Prediction</h3>
+          <div class="meta">Tools: Python, Scikit-Learn</div>
+          <img class="screenshot" src="https://via.placeholder.com/800x450.png?text=Predicted+vs+Actual+Scatter" alt="Project 3">
+          <p style="margin-top:10px">Implemented regression models to predict continuous values and provided business-ready reporting and explanations.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI Media Samples -->
+    <section id="media">
+      <div class="section-header">
+        <h2>AI Media Samples</h2>
+      </div>
+      <div class="grid media-grid">
+        <img src="https://via.placeholder.com/600x400.png?text=AI+Image+1" alt="ai1">
+        <img src="https://via.placeholder.com/600x400.png?text=AI+Image+2" alt="ai2">
+        <img src="https://via.placeholder.com/600x400.png?text=AI+Image+3" alt="ai3">
+        <img src="https://via.placeholder.com/600x400.png?text=AI+Image+4" alt="ai4">
+      </div>
+    </section>
+
+    <!-- Video Samples -->
+    <section id="videos">
+      <div class="section-header">
+        <h2>AI Video Samples</h2>
+      </div>
+      <div class="grid video-grid">
+        <div class="card video-thumb">Thumbnail 1</div>
+        <div class="card video-thumb">Thumbnail 2</div>
+        <div class="card video-thumb">Thumbnail 3</div>
+        <div class="card video-thumb">Thumbnail 4</div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="section-header">
+        <h2>Contact</h2>
+      </div>
+      <div class="card contact">
+        <div>
+          <div style="font-weight:700">Hire Me</div>
+          <div style="color:var(--muted);font-size:14px;margin-top:6px">Let's collaborate to bring your data or creative vision to life with AI and Machine Learning.</div>
+        </div>
+        <div style="margin-left:auto;text-align:right">
+          <div style="color:var(--muted)">Fiverr:</div>
+          <a href="#" style="font-weight:700;color:var(--accent);text-decoration:none">Your Fiverr Link</a>
+          <div style="margin-top:8px;color:var(--muted)">Email:</div>
+          <div style="color:var(--accent);font-weight:600">your.email@example.com</div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      &copy; <span id="year"></span> Themiya Thawalpitiya • Data Science & Business Analytics
+    </footer>
+  </div>
+
+  <script>
+    // small JS helpers
+    document.getElementById('year').innerText = new Date().getFullYear();
+    // smooth scroll for nav
+    document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();document.querySelector(a.getAttribute('href')).scrollIntoView({behavior:'smooth'});}));
+  </script>
+</body>
 </html>
